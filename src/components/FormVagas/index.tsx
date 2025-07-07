@@ -1,5 +1,5 @@
 import { FormEvent, useState } from 'react'
-import { Fml, BtnSearch, Campo } from '../Cabecalho/Cabecalho.module'
+import { Fml, BtnSearch, Campo } from './FormVagas.styled'
 
 type Props = {
   aoPesquisar: (termo: string) => void
@@ -14,7 +14,7 @@ const FormVagas = ({ aoPesquisar }: Props) => {
   }
 
   return (
-    <Fml>
+    <Fml onSubmit={aoEnviarForm}>
       <Campo
         placeholder="Front-end, fullstack, node, design"
         onChange={(e) => setTermo(e.target.value)}

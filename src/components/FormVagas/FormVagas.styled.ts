@@ -7,6 +7,13 @@ export const Fml = styled.form`
   padding: 32px;
   border-radius: 12px;
   margin-top: 40px;
+
+  @media (max-width: 768px) {
+    & {
+      display: block;
+      text-align: center;
+    }
+  }
 `
 
 export const BtnSearch = styled.button`
@@ -18,9 +25,24 @@ export const BtnSearch = styled.button`
   color: var(--cor-secundaria);
   margin-left: 8px;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    & {
+      margin: 16px auto;
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
 `
 
 export const Campo = styled.input`
   padding: 0 16px;
   outline-color: var(--cor-principal);
+
+  @media (max-width: 768px) {
+    & {
+      padding: 16px;
+      width: 100%;
+    }
+  }
 `
